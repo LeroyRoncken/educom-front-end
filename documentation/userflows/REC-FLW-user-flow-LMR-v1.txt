@@ -1,0 +1,27 @@
+Home
+- highlighted item / album
+	-> cart -> add item to shopping cart ->| stay on current page*
+	-> read more / click album -> detail page
+	-> genre tag -> filter albums by genre (search page?)*
+
+- search -> search page: filter albums
+
+- logo -> homepage
+
+- shopping cart icon -> shopping cart page
+
+- menu
+	-> shop = homepage
+	-> account page
+	-> info page
+	-> contact page
+
+Detail
+- highlighted album
+	* same actions as album on homepage
+
+Shopping Cart
+- list of albums
+	-> click item -> detail page
+	-> delete -> remove item and update current page
+	-> checkout -> checkout page
