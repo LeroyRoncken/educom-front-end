@@ -1,0 +1,160 @@
+.home-grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas: "image" "highlight-title" "highlight-abstract" "new-articles" "top-article-1" "top-article-2" "top-article-3";
+}
+
+.image {
+  grid-area: image;
+}
+
+.highlight-title {
+  grid-area: highlight-title;
+}
+
+.highlight-abstract {
+  grid-area: highlight-abstract;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.new-articles {
+  grid-area: new-articles;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+}
+
+.top-article {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: row;
+}
+.top-article:nth-child(1) {
+  grid-area: top-article-1;
+}
+.top-article:nth-child(2) {
+  grid-area: top-article-2;
+}
+.top-article:nth-child(3) {
+  grid-area: top-article-3;
+}
+
+@media (min-width: 45rem) {
+  .home-grid {
+    grid-template-areas: "image image new-articles" "highlight-title highlight-abstract new-articles" "top-article-1 top-article-2 top-article-3";
+  }
+}
+.desktop-img {
+  width: 100%;
+}
+
+.top-article-image {
+  width: 30%;
+  margin-right: 1.2rem;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid hsl(236, 13%, 42%);
+  margin: 1px 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: hsl(240, 100%, 5%);
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1em;
+  letter-spacing: -0.03rem;
+  margin: 11px 0px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1em;
+  letter-spacing: -0.03rem;
+  margin: 11px 0px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 11px 0px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 11px 0px;
+}
+
+p {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 11px 0px;
+}
+
+.attribution {
+  margin-top: 2.4rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.btn-color {
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+}
+
+.btn-size {
+  width: 10em;
+  height: 2.6em;
+}
+
+.btn-border {
+  border: 1px outset hsl(5, 85%, 63%);
+}
+
+.btn-txt-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt-spacing-wide {
+  letter-spacing: 0.2rem;
+}
+
+.padding-x {
+  padding: 1rem;
+}
+
+.color-highlight {
+  color: hsl(35, 77%, 62%);
+}
+
+.number-color {
+  color: hsl(233, 8%, 79%);
+}
+
+.number-size {
+  font-size: 20px;
+  font-weight: 800;
+}/*# sourceMappingURL=main.css.map */

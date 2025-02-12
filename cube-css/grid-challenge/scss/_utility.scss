@@ -1,0 +1,57 @@
+.attribution {
+    margin-top: 2*$gap;
+    font-size: 11px;
+    text-align: center;
+    a {
+        color: $attribution-color;
+    }
+}
+
+
+.btn-color {
+    background-color: $red;
+    color: $off-white;
+}
+
+.btn-size {
+    width: 10em;
+    height: 2.6em;
+}
+
+.btn-border {
+    border: 1px outset $red;
+}
+
+.btn-txt-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+// .txt-spacing-narrow {
+//     letter-spacing: $letter-spacing-narrow;
+// }
+
+.txt-spacing-wide {
+    letter-spacing: $letter-spacing-wide;
+}
+
+.padding-x {
+    padding: $padding-x;
+}
+
+
+.color-highlight {
+    color: $orange;
+}
+
+
+.number-color {
+    color: $grayish-blue;
+}
+
+.number-size {
+    font-size: $font-size-medium-big;
+    font-weight: $font-weight-big;
+}

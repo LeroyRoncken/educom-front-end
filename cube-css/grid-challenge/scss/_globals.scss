@@ -1,0 +1,139 @@
+@mixin flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@mixin flex-container-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin theme($background-color) {
+    @if $background-color == "dark" {
+        background-color: $dark-blue;
+        color: $off-white;
+    } @else {
+        color: $dark-blue;
+    }
+}
+
+
+.home-grid {
+    display: grid;
+    gap: $gap;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+    'image'
+    'highlight-title'
+    'highlight-abstract'
+    'new-articles'
+    'top-article-1'
+    'top-article-2'
+    'top-article-3';
+}
+
+.image {
+    grid-area: image;
+}
+
+.highlight-title {
+    grid-area: highlight-title;
+}
+
+.highlight-abstract {
+    grid-area: highlight-abstract;
+    @include flex-container;
+}
+
+.new-articles {
+    grid-area: new-articles;
+    @include flex-container;
+    @include theme(dark);
+}
+
+.top-article {
+    margin-top: $gap;
+    @include flex-container-row;
+    &:nth-child(1) {
+        grid-area: top-article-1;
+    }
+    &:nth-child(2) {
+        grid-area: top-article-2;
+    }
+    &:nth-child(3) {
+        grid-area: top-article-3;
+    }
+}
+
+@media(min-width: $desktop-width) {
+    .home-grid {
+        grid-template-areas:
+        'image image new-articles'
+        'highlight-title highlight-abstract new-articles'
+        'top-article-1 top-article-2 top-article-3';
+    }
+}
+
+.desktop-img {
+    width: 100%;
+}
+
+.top-article-image {
+    width: 30%;
+    margin-right: $gap;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $dark-grayish-blue;
+    margin: 1px 0;
+    padding: 0;
+}
+
+
+body {
+    // font-family: 'inter';
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @include theme(light);
+}
+
+h1 {
+    font-size: $font-size-very-big;
+    font-weight: $font-weight-big;
+    line-height: $line-height-h;
+    letter-spacing: $letter-spacing-narrow;
+    margin: $margin-y;
+}
+
+h2 {
+    font-size: $font-size-big;
+    font-weight: $font-weight-big;
+    line-height: $line-height-h;
+    letter-spacing: $letter-spacing-narrow;
+    margin: $margin-y;
+}
+
+h3 {
+    font-size: $font-size-medium;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-h;
+    margin: $margin-y;
+}
+
+h4 {
+    font-size: $font-size-medium;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-h;
+    margin: $margin-y;
+}
+
+p {
+    font-size: $font-size-small;
+    font-weight: $font-weight-small;
+    line-height: $line-height-p;
+    margin: $margin-y;
+}
