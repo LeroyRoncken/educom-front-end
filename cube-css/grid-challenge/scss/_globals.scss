@@ -7,6 +7,7 @@
 @mixin flex-container-row {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 @mixin theme($background-color) {
@@ -15,6 +16,27 @@
         color: $off-white;
     } @else {
         color: $dark-blue;
+    }
+}
+
+
+.header {
+    @include flex-container-row;
+}
+
+.menu {
+    @media(min-width: $desktop-width) {
+        display: none;
+    }
+}
+
+.nav-bar {
+    display: none;
+    @media(min-width: $desktop-width) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 39%;
     }
 }
 
@@ -73,6 +95,11 @@
         'highlight-title highlight-abstract new-articles'
         'top-article-1 top-article-2 top-article-3';
     }
+}
+
+.logo {
+    width: 3rem;
+    margin: $margin-y-big;
 }
 
 .desktop-img {

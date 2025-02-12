@@ -1,5 +1,5 @@
 .attribution {
-    margin-top: 2*$gap;
+    margin: $margin-y-big;
     font-size: 11px;
     text-align: center;
     a {
@@ -54,4 +54,8 @@
 .number-size {
     font-size: $font-size-medium-big;
     font-weight: $font-weight-big;
+}
+
+.font-size-medium-small {
+    font-size: $font-size-medium-small;
 }
