@@ -1,9 +1,14 @@
 .header {
   display: flex;
   flex-direction: row;
+  margin: 2rem 0px;
   justify-content: space-between;
 }
 
+.menu {
+  height: 1.2rem;
+  margin: auto 0px;
+}
 @media (min-width: 45rem) {
   .menu {
     display: none;
@@ -24,7 +29,7 @@
 
 .home-grid {
   display: grid;
-  gap: 1.2rem;
+  gap: 2rem;
   grid-auto-columns: 1fr;
   grid-template-areas: "image" "highlight-title" "highlight-abstract" "new-articles" "top-article-1" "top-article-2" "top-article-3";
 }
@@ -51,13 +56,18 @@
   justify-content: space-between;
   background-color: hsl(240, 100%, 5%);
   color: hsl(36, 100%, 99%);
+  margin: 2rem 0px;
+}
+@media (min-width: 45rem) {
+  .new-articles {
+    margin: 0px;
+  }
 }
 
 .top-article {
-  margin-top: 1.2rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 .top-article:nth-child(1) {
   grid-area: top-article-1;
@@ -79,13 +89,34 @@
   margin: 2rem 0px;
 }
 
-.desktop-img {
+.mobile-img {
   width: 100%;
+}
+@media (min-width: 45rem) {
+  .mobile-img {
+    display: none;
+  }
+}
+
+.desktop-img {
+  display: none;
+}
+@media (min-width: 45rem) {
+  .desktop-img {
+    display: flex;
+    width: 100%;
+  }
 }
 
 .top-article-image {
   width: 30%;
-  margin-right: 1.2rem;
+  margin-right: 2rem;
+}
+
+.top-article-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 hr {
@@ -100,48 +131,55 @@ hr {
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: hsl(240, 100%, 5%);
+  margin: 0px 1rem;
+}
+@media (min-width: 45rem) {
+  body {
+    margin: 5rem 10rem;
+  }
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.625rem;
   font-weight: 800;
   line-height: 1em;
-  letter-spacing: -0.03rem;
-  margin: 0.7rem 0px;
+  letter-spacing: -0.1rem;
+  margin: 1rem 0px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2.25rem;
   font-weight: 800;
   line-height: 1em;
-  letter-spacing: -0.03rem;
-  margin: 0.7rem 0px;
+  letter-spacing: -0.1rem;
+  margin: 1rem 0px;
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1em;
-  margin: 0.7rem 0px;
+  margin: 1rem 0px;
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 1.1rem;
   font-weight: 700;
   line-height: 1em;
-  margin: 0.7rem 0px;
+  margin: 1rem 0px;
 }
 
 p {
-  font-size: 11px;
+  font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.5em;
-  margin: 0.7rem 0px;
+  margin: 1rem 0px;
+  color: hsl(236, 13%, 42%);
 }
 
 .attribution {
-  margin: 2rem 0px;
-  font-size: 11px;
+  margin-top: 7rem;
+  font-size: 0.8rem;
   text-align: center;
 }
 .attribution a {
@@ -150,12 +188,12 @@ p {
 
 .btn-color {
   background-color: hsl(5, 85%, 63%);
-  color: hsl(36, 100%, 99%);
+  color: hsl(36, 100%, 99%) !important;
 }
 
 .btn-size {
-  width: 10em;
-  height: 2.6em;
+  width: 14em;
+  height: 3.5em;
 }
 
 .btn-border {
@@ -172,12 +210,16 @@ p {
   letter-spacing: 0.2rem;
 }
 
-.padding-x {
-  padding: 1rem;
+.padding {
+  padding: 1rem 1.5rem;
 }
 
 .color-highlight {
   color: hsl(35, 77%, 62%);
+}
+
+.color-light {
+  color: hsl(233, 8%, 79%);
 }
 
 .number-color {
@@ -185,10 +227,10 @@ p {
 }
 
 .number-size {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 800;
 }
 
 .font-size-medium-small {
-  font-size: 13px;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=main.css.map */

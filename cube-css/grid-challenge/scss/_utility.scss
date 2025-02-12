@@ -1,6 +1,6 @@
 .attribution {
-    margin: $margin-y-big;
-    font-size: 11px;
+    margin-top: 7rem;
+    font-size: 0.8rem;
     text-align: center;
     a {
         color: $attribution-color;
@@ -10,12 +10,12 @@
 
 .btn-color {
     background-color: $red;
-    color: $off-white;
+    color: $off-white !important;
 }
 
 .btn-size {
-    width: 10em;
-    height: 2.6em;
+    width: 14em;
+    height: 3.5em;
 }
 
 .btn-border {
@@ -37,13 +37,21 @@
     letter-spacing: $letter-spacing-wide;
 }
 
-.padding-x {
-    padding: $padding-x;
+.padding {
+    padding: $padding;
 }
+
+// .padding-y {
+//     padding: $padding-y;
+// }
 
 
 .color-highlight {
     color: $orange;
+}
+
+.color-light{
+    color: $grayish-blue;
 }
 
 

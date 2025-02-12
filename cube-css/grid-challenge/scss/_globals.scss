@@ -7,7 +7,6 @@
 @mixin flex-container-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 @mixin theme($background-color) {
@@ -22,9 +21,13 @@
 
 .header {
     @include flex-container-row;
+    margin: $margin-y-big;
+    justify-content: space-between;
 }
 
 .menu {
+    height: 1.2rem;
+    margin: auto 0px;
     @media(min-width: $desktop-width) {
         display: none;
     }
@@ -72,6 +75,10 @@
     grid-area: new-articles;
     @include flex-container;
     @include theme(dark);
+    margin: $margin-y-big;
+    @media(min-width: $desktop-width) {
+        margin: 0px;
+    }
 }
 
 .top-article {
@@ -102,13 +109,28 @@
     margin: $margin-y-big;
 }
 
-.desktop-img {
+.mobile-img {
     width: 100%;
+    @media (min-width: $desktop-width) {
+        display: none;
+    }
+}
+
+.desktop-img {
+    display: none;
+    @media (min-width: $desktop-width) {
+        display: flex;
+        width: 100%;
+    }
 }
 
 .top-article-image {
     width: 30%;
     margin-right: $gap;
+}
+
+.top-article-text {
+    @include flex-container;
 }
 
 
@@ -126,6 +148,10 @@ body {
     // font-family: 'inter';
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     @include theme(light);
+    margin: $margin-x;
+    @media (min-width: $desktop-width) {
+        margin: $margin-big;
+    }
 }
 
 h1 {
@@ -152,7 +178,7 @@ h3 {
 }
 
 h4 {
-    font-size: $font-size-medium;
+    font-size: $font-size-medium-small;
     font-weight: $font-weight-medium;
     line-height: $line-height-h;
     margin: $margin-y;
@@ -163,4 +189,5 @@ p {
     font-weight: $font-weight-small;
     line-height: $line-height-p;
     margin: $margin-y;
+    color: $dark-grayish-blue;
 }
