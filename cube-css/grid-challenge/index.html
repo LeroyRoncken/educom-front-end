@@ -18,7 +18,18 @@
   <header>
     <div class="header">
       <img src="/cube-css/grid-challenge/assets/images/logo.svg" class="logo" alt="W. logo">
-      <img src="/cube-css/grid-challenge/assets/images/icon-menu.svg" class="menu" alt="Menu">
+      <div id="menu-overlay-background"></div>
+      <div id="menu-overlay">
+        <img src="/cube-css/grid-challenge/assets/images/icon-menu-close.svg" onclick="menuOff()" class="menu-close" alt="Close menu">
+        <div class="menu-nav font-size-medium-small">
+          <a>Home</a>
+          <a>New</a>
+          <a>Popular</a>
+          <a>Trending</a>
+          <a>Categories</a>
+        </div>
+      </div>
+      <img src="/cube-css/grid-challenge/assets/images/icon-menu.svg" onclick="menuOn()" class="menu" alt="Menu">
       <div class="nav-bar font-size-medium-small">
         <a>Home &nbsp;</a>
         <a>New &nbsp;</a>
@@ -27,6 +38,17 @@
         <a>Categories</a>
       </div>
     </div>
+
+    <script>
+      function menuOn() {
+        document.getElementById("menu-overlay-background").style.display = "block";
+        document.getElementById("menu-overlay").style.display = "block";
+      }
+      function menuOff() {
+        document.getElementById("menu-overlay-background").style.display = "none";
+        document.getElementById("menu-overlay").style.display = "none";
+      }
+    </script>
   </header>
 
   <main class="home-grid">
@@ -44,8 +66,8 @@
         We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
       </p>
 
-      <button class="btn-color btn-size btn-border [ btn-txt-align txt-spacing-wide ]">
-        <p class="btn-color">READ MORE</p>
+      <button class="btn-color btn-size [ btn-txt-align txt-spacing-wide ]">
+        <p class="btn-color-text">READ MORE</p>
       </button>
     </div>
 

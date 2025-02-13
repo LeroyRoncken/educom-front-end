@@ -10,16 +10,21 @@
 
 .btn-color {
     background-color: $red;
-    color: $off-white !important;
+    border: 1px outset $red;
+    &:hover {
+        background-color: $dark-blue;
+        border: 1px outset $dark-blue;
+        cursor: pointer;
+    }
+}
+
+.btn-color-text {
+    color: $off-white;
 }
 
 .btn-size {
     width: 14em;
     height: 3.5em;
-}
-
-.btn-border {
-    border: 1px outset $red;
 }
 
 .btn-txt-align {

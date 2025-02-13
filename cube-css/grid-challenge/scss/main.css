@@ -8,11 +8,58 @@
 .menu {
   height: 1.2rem;
   margin: auto 0px;
+  cursor: pointer;
 }
 @media (min-width: 45rem) {
   .menu {
     display: none;
   }
+}
+
+#menu-overlay-background {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: hsla(240, 100%, 5%, 0.5);
+  z-index: 1;
+}
+
+#menu-overlay {
+  position: fixed;
+  display: none;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: hsl(36, 100%, 99%);
+  z-index: 2;
+}
+
+.menu-close {
+  width: 2rem;
+  margin-top: 4rem;
+  margin-right: 1.4rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  margin-left: 2rem;
+}
+.menu-nav a {
+  margin-bottom: 2rem;
+}
+.menu-nav a:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
 }
 
 .nav-bar {
@@ -24,6 +71,10 @@
     align-items: center;
     justify-content: space-between;
     min-width: 39%;
+  }
+  .nav-bar a:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
   }
 }
 
@@ -62,6 +113,10 @@
     margin: 0px;
   }
 }
+.new-articles h3:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
 
 .top-article {
   margin-top: 2rem;
@@ -76,6 +131,10 @@
 }
 .top-article:nth-child(3) {
   grid-area: top-article-3;
+}
+.top-article h4:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
 }
 
 @media (min-width: 45rem) {
@@ -190,16 +249,21 @@ p {
 
 .btn-color {
   background-color: hsl(5, 85%, 63%);
-  color: hsl(36, 100%, 99%) !important;
+  border: 1px outset hsl(5, 85%, 63%);
+}
+.btn-color:hover {
+  background-color: hsl(240, 100%, 5%);
+  border: 1px outset hsl(240, 100%, 5%);
+  cursor: pointer;
+}
+
+.btn-color-text {
+  color: hsl(36, 100%, 99%);
 }
 
 .btn-size {
   width: 14em;
   height: 3.5em;
-}
-
-.btn-border {
-  border: 1px outset hsl(5, 85%, 63%);
 }
 
 .btn-txt-align {
