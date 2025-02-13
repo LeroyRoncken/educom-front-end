@@ -73,7 +73,7 @@
     min-width: 39%;
   }
   .nav-bar a:hover {
-    color: hsl(35, 77%, 62%);
+    color: hsl(5, 85%, 63%);
     cursor: pointer;
   }
 }
