@@ -109,8 +109,11 @@
 }
 
 .top-article-image {
-  width: 30%;
+  max-width: 32%;
+  height: 100%;
   margin-right: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .top-article-text {
@@ -163,14 +166,14 @@ h3 {
 }
 
 h4 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1em;
   margin: 1rem 0px;
 }
 
 p {
-  font-size: 0.9375rem;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5em;
   margin: 1rem 0px;
@@ -232,5 +235,5 @@ p {
 }
 
 .font-size-medium-small {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */
