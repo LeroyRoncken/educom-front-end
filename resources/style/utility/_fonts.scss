@@ -1,0 +1,10 @@
+/** UTILITY: Fonts **/
+@each $entry in $fonts {
+    $type: map-get($entry, 'type');
+    /*! #{$type} */
+
+    $map: fontMap($type, $entry);
+    @each $font-class, $font-size in $map {
+        #{$font-class} { font-size: unquote($font-size) };
+    }
+}

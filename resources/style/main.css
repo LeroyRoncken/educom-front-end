@@ -1,3 +1,24 @@
+/** FONTS **/
+/*! main-text-regular */
+@font-face {
+  font-family: "main-text-regular";
+  src: url("../fonts/font.woff2") format("woff2"), url("../fonts/font.woff") format("woff"), url("../fonts/font.ttf") format("ttf");
+}
+/*! main-text-medium */
+@font-face {
+  font-family: "main-text-medium";
+  src: url("../fonts/font.woff2") format("woff2"), url("../fonts/font.woff") format("woff"), url("../fonts/font.ttf") format("ttf");
+}
+/*! main-text-bold */
+@font-face {
+  font-family: "main-text-bold";
+  src: url("../fonts/font.woff2") format("woff2"), url("../fonts/font.woff") format("woff"), url("../fonts/font.ttf") format("ttf");
+}
+/*! heading */
+@font-face {
+  font-family: "heading";
+  src: url("../fonts/font-heading.woff2") format("woff2"), url("../fonts/font-heading.woff") format("woff"), url("../fonts/font-heading.ttf") format("ttf");
+}
 /** CUSTOM PROPERTIES **/
 :root {
   /** COLOR **/
@@ -576,4 +597,121 @@
 
 .fg-highlight-dark-50 {
   color: var(--fg-highlight-dark-50);
+}
+
+/** UTILITY: Fonts **/
+/*! main-text-regular */
+.main-text-regular-10 {
+  font-size: 10px;
+}
+
+.main-text-regular-12 {
+  font-size: 12px;
+}
+
+.main-text-regular-14 {
+  font-size: 14px;
+}
+
+.main-text-regular-16 {
+  font-size: 16px;
+}
+
+.main-text-regular-18 {
+  font-size: 18px;
+}
+
+.main-text-regular-20 {
+  font-size: 20px;
+}
+
+.main-text-regular-22 {
+  font-size: 22px;
+}
+
+/*! main-text-medium */
+.main-text-medium-10 {
+  font-size: 10px;
+}
+
+.main-text-medium-12 {
+  font-size: 12px;
+}
+
+.main-text-medium-14 {
+  font-size: 14px;
+}
+
+.main-text-medium-16 {
+  font-size: 16px;
+}
+
+.main-text-medium-18 {
+  font-size: 18px;
+}
+
+.main-text-medium-20 {
+  font-size: 20px;
+}
+
+.main-text-medium-22 {
+  font-size: 22px;
+}
+
+/*! main-text-bold */
+.main-text-bold-10 {
+  font-size: 10px;
+}
+
+.main-text-bold-12 {
+  font-size: 12px;
+}
+
+.main-text-bold-14 {
+  font-size: 14px;
+}
+
+.main-text-bold-16 {
+  font-size: 16px;
+}
+
+.main-text-bold-18 {
+  font-size: 18px;
+}
+
+.main-text-bold-20 {
+  font-size: 20px;
+}
+
+.main-text-bold-22 {
+  font-size: 22px;
+}
+
+/*! heading */
+.heading-10 {
+  font-size: 10px;
+}
+
+.heading-12 {
+  font-size: 12px;
+}
+
+.heading-14 {
+  font-size: 14px;
+}
+
+.heading-16 {
+  font-size: 16px;
+}
+
+.heading-18 {
+  font-size: 18px;
+}
+
+.heading-20 {
+  font-size: 20px;
+}
+
+.heading-22 {
+  font-size: 22px;
 }/*# sourceMappingURL=main.css.map */
