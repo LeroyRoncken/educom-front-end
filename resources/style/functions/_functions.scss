@@ -90,3 +90,17 @@ $types: 'light', 'dark';
     }
     @return ($map);
 }
+
+
+@function spacing($type, $spacing) {
+    $map: ();
+    
+    @each $key, $value in $spacing {
+        $spacing-class: '.' + $type + '-' + $key;
+        $space: $value + 'rem';
+        $base: ($spacing-class: $space);
+        $map: map-merge($map, $base);
+    }
+
+    @return ($map);
+}
