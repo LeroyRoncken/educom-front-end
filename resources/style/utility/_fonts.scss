@@ -3,7 +3,7 @@
     $type: map-get($entry, 'type');
     /*! #{$type} */
 
-    $map: fontMap($type, $entry);
+    $map: fontSizes($type, $entry);
     @each $font-class, $font-size in $map {
         #{$font-class} { font-size: unquote($font-size) };
     }

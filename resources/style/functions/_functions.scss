@@ -76,7 +76,7 @@ $types: 'light', 'dark';
 }
 
 
-@function fontMap($type, $entry) {
+@function fontSizes($type, $entry) {
     $type: map-get($entry, 'type');
     $sizes: map-get($entry, 'sizes');
 
