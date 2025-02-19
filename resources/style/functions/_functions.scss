@@ -4,17 +4,17 @@
 $types: 'light', 'dark';
 
 
-@function strip-unit($num) {
-    @return $num / ($num * 0 + 1);
-}
+// @function strip-unit($num) {
+//     @return $num / ($num * 0 + 1);
+// }
   
-@function pxToRem($pxValue) {
-    @if $unit == 'rem' {
-        @return (($pxValue / 16) * 1rem);
-    } @else {
-        @return ($pxValue * 1px);
-    }
-}
+// @function pxToRem($pxValue) {
+//     @if $unit == 'rem' {
+//         @return (($pxValue / 16) * 1rem);
+//     } @else {
+//         @return ($pxValue * 1px);
+//     }
+// }
 
 
 @function rootColor($type, $key, $style) {
@@ -97,7 +97,7 @@ $types: 'light', 'dark';
     
     @each $key, $value in $spacing {
         $spacing-class: '.' + $type + '-' + $key;
-        $space: $value + 'rem';
+        $space: $value + $unit;
         $base: ($spacing-class: $space);
         $map: map-merge($map, $base);
     }
